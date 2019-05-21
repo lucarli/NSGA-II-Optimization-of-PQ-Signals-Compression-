@@ -1,4 +1,4 @@
-function [f, count] = EvaluateObjectives(signalSeg, varDec, tabWaveletsComp, nroFObj, nroVar, nroSignals)
+function [f, count] = EvaluateObjectivesArithmetic(signalSeg, varDec, tabWaveletsComp, nroFObj, nroVar, nroSignals)
 
 wavelet = tabWaveletsComp(round(varDec(1))).WaveletComp;
 threshold = varDec(2);
