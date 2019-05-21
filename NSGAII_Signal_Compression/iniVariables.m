@@ -53,9 +53,14 @@ for i=1:nroPop
                 f(i,j) = initialPop(ind(i)).ShiftConst;
         end
     end
-
-[f(i,nroVar + 1: nroVar + nroFObj), firstCount] = EvaluateObjectives(pDist,f(i,:), tabWaveletsComp, ...
+    
+    
+    
+[f(i,nroVar + 1: nroVar + nroFObj), firstCount] = EvaluateObjectivesArithmetic(pDist,f(i,:), tabWaveletsComp, ...
                                                    nroFObj, nroVar, nroSignals);
+
+%[f(i,nroVar + 1: nroVar + nroFObj), firstCount] = EvaluateObjectivesRuffman(pDist,f(i,:), tabWaveletsComp, ...
+%                                                   nroFObj, nroVar, nroSignals);
 
 count = firstCount;
 
