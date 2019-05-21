@@ -1,4 +1,4 @@
-function [f, dict] = avaliaObjetivos(signalSeg, varDec, tabWaveletsComp, nroFObj, nroVar, nroSignals)
+function [f, dict] = EvaluateObjectivesRuffman(signalSeg, varDec, tabWaveletsComp, nroFObj, nroVar, nroSignals)
 
 wavelet = tabWaveletsComp(round(varDec(1))).WaveletComp;
 limiar = varDec(2);
